@@ -14,7 +14,7 @@ def connect():
             TYPE mysql,
             HOST 'db1.cqee4iwdcaph.us-east-1.rds.amazonaws.com',
             PORT 3306,
-            DATABASE 'nem2p',
+            DATABASE 'xfd3tf',
             USER 'admin',
             PASSWORD '{RDS_PASSWORD}'
         );
