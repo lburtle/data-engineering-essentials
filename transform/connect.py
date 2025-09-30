@@ -10,7 +10,7 @@ def connect():
 
         # Create a persistent MySQL secret
         con.execute(f"""
-        CREATE PERSISTENT SECRET rds (
+        CREATE OR REPLACE PERSISTENT SECRET rds (
             TYPE mysql,
             HOST 'db1.cqee4iwdcaph.us-east-1.rds.amazonaws.com',
             PORT 3306,
@@ -23,7 +23,6 @@ def connect():
         print("Secret created successfully.")
         return con
     
-
     except Exception as e:
         print(f"Error connecting to DuckDB: {e}")
 

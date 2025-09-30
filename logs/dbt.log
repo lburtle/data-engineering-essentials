@@ -1,0 +1,23 @@
+[0m14:50:51.957191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058138c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d37b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d379d0>]}
+
+
+============================== 14:50:51.964367 | 02d0c934-222e-4990-b1e8-996cd55266a1 ==============================
+[0m14:50:51.964367 [info ] [MainThread]: Running with dbt=1.10.11
+[0m14:50:51.964870 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'debug': 'False', 'target_path': 'None', 'log_format': 'default', 'partial_parse': 'True', 'profiles_dir': '/Users/landonburtle/Desktop/.dbt', 'warn_error': 'None', 'introspect': 'True', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_colors': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'empty': 'None', 'static_parser': 'True', 'invocation_command': 'dbt init', 'log_path': 'logs'}
+[0m14:50:51.976353 [info ] [MainThread]: Creating dbt configuration folder at /Users/landonburtle/Desktop/.dbt
+[0m14:51:13.450438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10791b8c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e4bb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e4b9d0>]}
+
+
+============================== 14:51:13.452891 | b92b3a3f-772a-4f94-adc7-39e2f03c0f19 ==============================
+[0m14:51:13.452891 [info ] [MainThread]: Running with dbt=1.10.11
+[0m14:51:13.453210 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'log_path': 'logs', 'quiet': 'False', 'use_experimental_parser': 'False', 'target_path': 'None', 'no_print': 'None', 'log_cache_events': 'False', 'printer_width': '80', 'static_parser': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'debug': 'False', 'introspect': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'empty': 'False', 'profiles_dir': '/Users/landonburtle/Desktop/.dbt', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'log_format': 'default', 'version_check': 'True'}
+[0m14:51:13.453511 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/landonburtle/2025_Fall/DS_3022/data-engineering-essentials/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:51:13.456451 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.039536417, "process_in_blocks": "0", "process_kernel_time": 0.084365, "process_mem_max_rss": "103399424", "process_out_blocks": "0", "process_user_time": 0.651723}
+[0m14:51:13.456719 [debug] [MainThread]: Command `dbt run` failed at 14:51:13.456672 after 0.04 seconds
+[0m14:51:13.456895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d3b5c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e7db50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ce59d0>]}
+[0m14:51:13.457061 [debug] [MainThread]: Flushing usage events
+[0m14:51:13.710693 [debug] [MainThread]: An error was encountered while trying to flush usage events
